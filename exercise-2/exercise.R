@@ -28,13 +28,13 @@ table(salaries$got.raise)
 which.max(salaries$raise)
 
 # What was the name of the employee who recieved the highest raise?
-salaries[which.max(salaries$raise), 1]
+salaries[which.max(salaries$raise), 'employee']
 
 # What was the largest decrease in salaries between the two years?
 min(salaries$raise)
 
 # What was the name of the employee who recieved largest decrease in salary?
-salaries[which.min(salaries$raise), 1]
+salaries[which.min(salaries$raise), 'employee']
 
 # What was the average salary increase?
 mean(salaries$raise)
